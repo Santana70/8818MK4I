@@ -12,7 +12,6 @@ import edu.wpi.first.wpilibj2.command.CommandScheduler;
 import com.revrobotics.spark.SparkLowLevel.MotorType;
 
 
-
 import com.revrobotics.spark.SparkMax;
 
 import edu.wpi.first.wpilibj.DoubleSolenoid;

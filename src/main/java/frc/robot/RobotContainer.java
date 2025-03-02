@@ -48,7 +48,13 @@ import frc.robot.Robot;
  */
 public class RobotContainer
 {
+     // The robot's subsystems and commands are defined here...
+     final Joint1Subsystem joint1Subsystem = new Joint1Subsystem();
 
+     // Replace with CommandPS4Controller or CommandJoystick if needed
+     final CommandXboxController m_driverController =
+         new CommandXboxController(OperatorConstants.kDriverControllerPort);
+   
   // Replace with CommandPS4Controller or CommandJoystick if needed
   final         CommandXboxController driverXbox = new CommandXboxController(0);
   // The robot's subsystems and commands are defined here...
@@ -118,12 +124,6 @@ public class RobotContainer
     DriverStation.silenceJoystickConnectionWarning(true);
     NamedCommands.registerCommand("test", Commands.print("I EXIST"));
 
-     // The robot's subsystems and commands are defined here...
-  final Joint1Subsystem joint1Subsystem = new Joint1Subsystem();
-
-  // Replace with CommandPS4Controller or CommandJoystick if needed
-  final CommandXboxController m_driverController =
-      new CommandXboxController(OperatorConstants.kDriverControllerPort);
 
   }
 
